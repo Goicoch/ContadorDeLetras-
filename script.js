@@ -1,10 +1,10 @@
-const userText = document.getElementById('inputText')
-const characters = document.getElementById('char')
+const  textoIngresado = document.getElementById('texto')
+const letras = document.getElementById('letras')
 
 
-userText.addEventListener('input', function () {
-    const textWithoutSpaces = userText.value.replace(/\s/g, '');
-    characters.innerHTML = textWithoutSpaces.length + ' Letras';
+ textoIngresado.addEventListener('input', function () {
+    const textoSinEspacio =  textoIngresado.value.replace(/\s/g, '');
+    letras.innerHTML =  'Total Letras'+ ":" + textoSinEspacio.length ;
     
    
 });
